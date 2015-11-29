@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <LinearLayout
+            android:id="@+id/as_personal_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Advanced Search Criteria"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <EditText
+                android:id="@+id/moneyrequired"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Family Income"/>
+            <EditText
+                android:id="@+id/marks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks %"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parent Status"
+                android:textSize="14sp"
+                android:textColor="#000"/>
+            <Spinner
+                android:id="@+id/ddl_parent_status"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="14sp"
+                android:textColor="#000"/>
+            <Spinner
+                android:id="@+id/ddl_city"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</ScrollView>
